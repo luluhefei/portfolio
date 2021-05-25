@@ -21,6 +21,7 @@ body {
   align-content: flex-start;
   padding-top: 3rem;
   width: 50%;
+  overflow: scroll;
 }
 
 .bio {
@@ -105,6 +106,7 @@ a {
   background-color: #FFFFFF;
   border: 1px solid #E6E6E6;
   box-sizing: border-box;
+  border-radius: 8px;
 }
 
 .projectCard2 {
@@ -115,6 +117,7 @@ a {
   background-color: #FFFFFF;
   border: 1px solid #E6E6E6;
   box-sizing: border-box;
+  border-radius: 8px;
 }
 
 .projectCard3 {
@@ -125,6 +128,7 @@ a {
   background-color: #FFFFFF;
   border: 1px solid #E6E6E6;
   box-sizing: border-box;
+  border-radius: 8px;
 }
 
 .projectCard4 {
@@ -135,6 +139,7 @@ a {
   background-color: #FFFFFF;
   border: 1px solid #E6E6E6;
   box-sizing: border-box;
+  border-radius: 8px;
 }
 
 .projectCard5 {
@@ -145,6 +150,7 @@ a {
   background-color: #FFFFFF;
   border: 1px solid #E6E6E6;
   box-sizing: border-box;
+  border-radius: 8px;
 }
 
 .projectCard6 {
@@ -155,6 +161,7 @@ a {
   background-color: #FFFFFF;
   border: 1px solid #E6E6E6;
   box-sizing: border-box;
+  border-radius: 8px;
 }
 
 .projectTitle {
@@ -193,3 +200,61 @@ button:hover {
   color: #3E56D3;
 }
 */
+
+
+.projectCard1:hover {
+  border-radius: 8px;
+  border-width: 0.1rem;
+  background: #f47f7f;
+  border: 1px solid #f47f7f;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.projectCard2:hover {
+  border-radius: 8px;
+  border-width: 0.1rem;
+  background: #4e9bf2;
+  border: 1px solid #4e9bf2;
+  box-sizing: border-box;
+  color: #fff;
+
+}
+
+.projectCard3:hover {
+  border-radius: 8px;
+  border-width: 0.1rem;
+  background: #5ac292;
+  border: 1px solid #5ac292;
+  box-sizing: border-box;
+  color: #fff;
+
+}
+
+.projectCard4:hover {
+  border-radius: 8px;
+  border-width: 0.1rem;
+  background: #f5a134;
+  border: 1px solid #f5a134;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.projectCard5:hover {
+  border-radius: 8px;
+  border-width: 0.1rem;
+  background: #e1819e;
+  border: 1px solid #e1819e;
+  box-sizing: border-box;
+  color: #fff;
+
+}
+
+.projectCard6:hover {
+  border-radius: 8px;
+  border-width: 0.1rem;
+  background: #8c6ce3;
+  border: 1px solid #8c6ce3;
+  box-sizing: border-box;
+  color: #fff;
+}
