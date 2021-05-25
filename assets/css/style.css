@@ -2,15 +2,31 @@ html {
   font-size: 16px;
 }
 
+body {
+  background-color: #fafaf9;
+  display: flex;
+  height: 50rem;
+}
+
 #left {
-  padding-left: 5rem;
-  padding-top: 2rem;
-  width: 30%;
+  padding-left: 22%;
+  padding-top: 3rem;
+  min-width: 18%;
+  max-width: 20%;
+}
+
+#right {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-top: 3rem;
+  width: 50%;
 }
 
 .bio {
   display: flex;
   flex-direction: column;
+  padding-right: 3rem;
 }
 
 .image-cropper {
@@ -41,12 +57,14 @@ img {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;
+  min-width: 50%;
 }
 
 .contactInfo {
   display: flex;
   float: left;
-  padding-top: 5rem;
+  padding-top: 3rem;
+  font-size: 0.75rem;
 }
 
 .contactInfoItems {
@@ -56,13 +74,122 @@ img {
 
 ol {
   font-family: 'rubik', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 1rem;
+}
+
+ol:hover {
+  background-color: #EFF5FC;
+  border-radius: 0.5rem;
+}
+
+a { 
+  text-decoration: none; 
+}
+
+.buttonText {
+  color:#333;
+}
+
+.buttonText:hover {
+  color: #3E56D3;
+}
+
+.projectCard1 {
+  margin: 2% 5%;
+  height: 10rem;
+  width: 28rem;
+  padding-left: 5%;
+  background-color: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  box-sizing: border-box;
+}
+
+.projectCard2 {
+  margin: 2% 5%;
+  height: 10rem;
+  width: 28rem;
+  padding-left: 5%;
+  background-color: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  box-sizing: border-box;
+}
+
+.projectCard3 {
+  margin: 2% 5%;
+  height: 10rem;
+  width: 28rem;
+  padding-left: 5%;
+  background-color: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  box-sizing: border-box;
+}
+
+.projectCard4 {
+  margin: 2% 5%;
+  height: 10rem;
+  width: 28rem;
+  padding-left: 5%;
+  background-color: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  box-sizing: border-box;
+}
+
+.projectCard5 {
+  margin: 2% 5%;
+  height: 10rem;
+  width: 28rem;
+  padding-left: 5%;
+  background-color: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  box-sizing: border-box;
+}
+
+.projectCard6 {
+  margin: 2% 5%;
+  height: 10rem;
+  width: 28rem;
+  padding-left: 5%;
+  background-color: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  box-sizing: border-box;
+}
+
+.projectTitle {
+  font-family: 'rubik', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  padding-top: 1rem;
+}
+
+.projectTagline {
+  font-family: 'rubik', sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  margin: 0;
-  padding: 1rem 0;
 }
 
-a:link {
-  text-decoration: none;
+/*
+.seeMoreButton {
+  display: flex;
+  height: 2rem;
+  width: 28rem;
+  margin: 1% 5%;
+  box-sizing: border-box;
 }
 
+button {
+  margin: 0 auto;
+  font-family: 'rubik', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: none;
+  color: #333;
+  background-color: #fafaf9;
+}
+
+button:hover {
+  color: #3E56D3;
+}
+*/
