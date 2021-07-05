@@ -1,3 +1,4 @@
+
 html {
   font-size: 16px;
 }
@@ -20,7 +21,7 @@ body {
   flex-wrap: wrap;
   align-content: flex-start;
   padding-top: 3rem;
-  width: 50%;
+  max-width: 28rem;
   overflow: scroll;
 }
 
@@ -47,9 +48,12 @@ img {
 
 .greeting {
   float: left;
-  font-family: 'rubik', sans-serif;
+  font-family: 'Rubrik', Arial, sans-serif;
   font-size: 1.875rem;
-  font-weight: 300;
+  font-weight: 500;
+  background: -webkit-linear-gradient(30deg,#da7777, #868591);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .summary {
@@ -59,12 +63,14 @@ img {
   font-weight: 300;
   line-height: 1.5;
   min-width: 50%;
+  color: #868591;
 }
 
 .contactInfo {
   display: flex;
   float: left;
   padding-top: 3rem;
+  margin-left: -1rem;
   font-size: 0.75rem;
 }
 
@@ -82,7 +88,7 @@ ol {
 }
 
 ol:hover {
-  background-color: #EFF5FC;
+  background-color: #fbd2d2;
   border-radius: 0.5rem;
 }
 
@@ -91,72 +97,57 @@ a {
 }
 
 .buttonText {
-  color:#333;
+  color:#da7777;
 }
 
-.buttonText:hover {
-  color: #3E56D3;
+.nav{
+  float: right;
+  font-family: 'rubik', Arial, sans-serif;
+  height: auto;
+  width: 26rem;
+  margin-left:auto;
+  margin-right:auto;
+  position: fixed;
 }
 
-.projectCard1 {
-  margin: 2% 5%;
-  height: 10rem;
-  width: 28rem;
-  padding-left: 5%;
-  background-color: #FFFFFF;
-  border: 1px solid #E6E6E6;
-  box-sizing: border-box;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: #da7777;
+  text-align: center;
+  padding: 11px 33px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #da7777;
+  color: #ffffff;
   border-radius: 8px;
 }
 
-.projectCard2 {
-  margin: 2% 5%;
-  height: 10rem;
-  width: 28rem;
-  padding-left: 5%;
-  background-color: #FFFFFF;
-  border: 1px solid #E6E6E6;
-  box-sizing: border-box;
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #da7777;
+  color: white;
   border-radius: 8px;
 }
 
-.projectCard3 {
-  margin: 2% 5%;
-  height: 10rem;
-  width: 28rem;
-  padding-left: 5%;
-  background-color: #FFFFFF;
-  border: 1px solid #E6E6E6;
-  box-sizing: border-box;
-  border-radius: 8px;
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
 }
 
-.projectCard4 {
-  margin: 2% 5%;
-  height: 10rem;
-  width: 28rem;
-  padding-left: 5%;
-  background-color: #FFFFFF;
-  border: 1px solid #E6E6E6;
-  box-sizing: border-box;
-  border-radius: 8px;
+#projects{
+  padding-top: 4rem;
 }
 
-.projectCard5 {
+.projectCard {
   margin: 2% 5%;
   height: 10rem;
-  width: 28rem;
-  padding-left: 5%;
-  background-color: #FFFFFF;
-  border: 1px solid #E6E6E6;
-  box-sizing: border-box;
-  border-radius: 8px;
-}
-
-.projectCard6 {
-  margin: 2% 5%;
-  height: 10rem;
-  width: 28rem;
+  width: auto;
   padding-left: 5%;
   background-color: #FFFFFF;
   border: 1px solid #E6E6E6;
@@ -169,12 +160,25 @@ a {
   font-size: 1rem;
   font-weight: 800;
   padding-top: 1rem;
+  line-height: 1.5rem;
+  color: #868591;
 }
 
 .projectTagline {
   font-family: 'rubik', sans-serif;
   font-size: 1rem;
   font-weight: 300;
+  line-height: 1.5rem;
+  padding-right: 2rem;
+  color: #868591;
+}
+
+.projectCard:hover {
+  border-radius: 8px;
+  border-width: 0.1rem;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: rgba(125, 125, 131, 0.2) 0px 7px 29px 0px;
 }
 
 /*
@@ -202,59 +206,4 @@ button:hover {
 */
 
 
-.projectCard1:hover {
-  border-radius: 8px;
-  border-width: 0.1rem;
-  background: #f47f7f;
-  border: 1px solid #f47f7f;
-  box-sizing: border-box;
-  color: #fff;
-}
 
-.projectCard2:hover {
-  border-radius: 8px;
-  border-width: 0.1rem;
-  background: #4e9bf2;
-  border: 1px solid #4e9bf2;
-  box-sizing: border-box;
-  color: #fff;
-
-}
-
-.projectCard3:hover {
-  border-radius: 8px;
-  border-width: 0.1rem;
-  background: #5ac292;
-  border: 1px solid #5ac292;
-  box-sizing: border-box;
-  color: #fff;
-
-}
-
-.projectCard4:hover {
-  border-radius: 8px;
-  border-width: 0.1rem;
-  background: #f5a134;
-  border: 1px solid #f5a134;
-  box-sizing: border-box;
-  color: #fff;
-}
-
-.projectCard5:hover {
-  border-radius: 8px;
-  border-width: 0.1rem;
-  background: #e1819e;
-  border: 1px solid #e1819e;
-  box-sizing: border-box;
-  color: #fff;
-
-}
-
-.projectCard6:hover {
-  border-radius: 8px;
-  border-width: 0.1rem;
-  background: #8c6ce3;
-  border: 1px solid #8c6ce3;
-  box-sizing: border-box;
-  color: #fff;
-}
