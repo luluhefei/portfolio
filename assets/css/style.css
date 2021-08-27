@@ -1,6 +1,10 @@
 
 html {
   font-size: 16px;
+
+  @media(max-width: 600px) {
+    font-size: 18px;
+  }
 }
 
 body {
@@ -11,7 +15,7 @@ body {
 
 #left {
   padding-left: 22%;
-  padding-top: 3rem;
+  padding-top: 4rem;
   min-width: 18%;
   max-width: 20%;
 }
@@ -20,7 +24,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  padding-top: 3rem;
+  padding-top: 2rem;
   max-width: 28rem;
   overflow: scroll;
 }
@@ -48,22 +52,22 @@ img {
 
 .greeting {
   float: left;
-  font-family: 'Rubrik', Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-size: 1.875rem;
   font-weight: 500;
-  background: -webkit-linear-gradient(30deg,#da7777, #868591);
+  background: -webkit-linear-gradient(30deg,#4b3bb6, #8648cd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .summary {
   float: left;
-  font-family: 'rubik', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.7;
   min-width: 50%;
-  color: #868591;
+  color: #5e5e66;
 }
 
 .contactInfo {
@@ -100,18 +104,29 @@ a {
   color:#da7777;
 }
 
+
 .nav{
   float: right;
-  font-family: 'rubik', Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   height: auto;
   width: 26rem;
+  margin-top: 2rem;
   margin-left:auto;
   margin-right:auto;
   position: fixed;
 }
 
+.nav a{
+  color: #4b3bb6;
+}
+
+
 /* Style the links inside the navigation bar */
+/* 
 .topnav a {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #fafaf9;
   float: right;
   display: block;
   color: #da7777;
@@ -120,28 +135,35 @@ a {
   text-decoration: none;
   font-size: 14px;
 }
+*/
 
 /* Change the color of links on hover */
+/* 
 .topnav a:hover {
   background-color: #da7777;
   color: #ffffff;
   border-radius: 8px;
 }
+*/
 
 /* Add an active class to highlight the current page */
+/*
 .topnav a.active {
   background-color: #da7777;
   color: white;
   border-radius: 8px;
 }
+*/
 
 /* Hide the link that should open and close the topnav on small screens */
+/*
 .topnav .icon {
   display: none;
 }
+*/
 
 #projects{
-  padding-top: 4rem;
+  padding-top: 1rem;
 }
 
 .projectCard {
@@ -150,33 +172,34 @@ a {
   width: auto;
   padding-left: 5%;
   background-color: #FFFFFF;
-  border: 1px solid #E6E6E6;
   box-sizing: border-box;
-  border-radius: 8px;
+  border-radius: 0px;
 }
 
 .projectTitle {
-  font-family: 'rubik', sans-serif;
-  font-size: 1rem;
-  font-weight: 800;
-  padding-top: 1rem;
-  line-height: 1.5rem;
-  color: #868591;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 1rem;
+  padding-top: 2rem;
+  line-height: 1.6rem;
+  color: #5e5e66;
 }
+
 
 .projectTagline {
   font-family: 'rubik', sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 0.9rem;
+  font-weight: 200;
   line-height: 1.5rem;
+  padding-left: 1rem;
   padding-right: 2rem;
-  color: #868591;
+  color: #5e5e66;
 }
 
 .projectCard:hover {
-  border-radius: 8px;
+  border-radius: 0px;
   border-width: 0.1rem;
-  border: 1px solid #FFFFFF;
   box-sizing: border-box;
   box-shadow: rgba(125, 125, 131, 0.2) 0px 7px 29px 0px;
 }
