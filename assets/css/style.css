@@ -1,12 +1,6 @@
 
 html {
   font-size: 16px;
-
-  @media only screen and (max-width: 900px) {
-    body{
-      background-color: green;
-    }
-  }
 }
 
 body {
@@ -15,24 +9,47 @@ body {
   height: 50rem;
 }
 
-#left {
+.leftContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding-left: 22%;
   padding-top: 4rem;
   min-width: 18%;
   max-width: 20%;
 }
 
-#right {
+.leftContainerProjectPage{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 22%;
+  padding-top: 4rem;
+  min-width: 10%;
+  max-width: 12%;
+}
+
+.rightContainer {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   padding-top: 2rem;
-  max-width: 28rem;
+  max-width: 40rem;
+  overflow: scroll;
+}
+
+.rightContainerProjectPage{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  padding-top: 2rem;
+  max-width: 40rem;
   overflow: scroll;
 }
 
 .bio {
-  display: flex;
+  display: block;
   flex-direction: column;
   padding-right: 3rem;
 }
@@ -100,6 +117,7 @@ ol:hover {
 
 a { 
   text-decoration: none; 
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .buttonText {
@@ -108,18 +126,20 @@ a {
 
 
 .nav{
-  float: right;
   font-family: 'Montserrat', Arial, sans-serif;
   height: auto;
   width: 26rem;
   margin-top: 2rem;
   margin-left:auto;
   margin-right:auto;
-  position: fixed;
 }
 
 .nav a{
   color: #4b3bb6;
+}
+
+.navItem {
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 
@@ -204,6 +224,31 @@ a {
   border-width: 0.1rem;
   box-sizing: border-box;
   box-shadow: rgba(125, 125, 131, 0.2) 0px 7px 29px 0px;
+}
+
+.ProjectPageTitle{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 28px;
+  line-height: 2.2rem;
+  text-align: center;
+  color: #333333;
+}
+
+.projectPageTagline{
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 16px;
+  margin-top: -1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #5e5e66;
+}
+
+.projectSummary{
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5rem;
+  text-align: left;
+  color: #5e5e66;
 }
 
 /*
