@@ -2,8 +2,10 @@
 html {
   font-size: 16px;
 
-  @media(max-width: 600px) {
-    font-size: 18px;
+  @media only screen and (max-width: 900px) {
+    body{
+      background-color: green;
+    }
   }
 }
 
@@ -183,7 +185,7 @@ a {
   padding-left: 1rem;
   padding-top: 2rem;
   line-height: 1.6rem;
-  color: #5e5e66;
+  color: #333333;
 }
 
 
